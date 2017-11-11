@@ -26,5 +26,3 @@ for name in dictionary:
 for eye_color in eye_dictionary:
     avg = sum(eye_dictionary[eye_color]) / len(eye_dictionary[eye_color])
     print("Średni wzrost osób z kolorem oczu {} wynosi {}".format(eye_color, avg))
-
-#co z dwukolorowymi oczami?
