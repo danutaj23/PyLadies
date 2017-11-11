@@ -1,0 +1,1 @@
+# Znajdź i zapisz wszystkie imiona kobiet do pliku sw_women a wszystkich mężczyzn do sw_men
