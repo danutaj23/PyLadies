@@ -1,4 +1,4 @@
-# Korzystając z API http://py.net/ spróbuj użyc querry stringów (query_string)
+# Korzystając z API http://py.net/ sprubój użyc querry stringów (query_string)
 
 # import requests
 # resp = requests.get('http://py.net/query_string')
