@@ -22,11 +22,12 @@ app.run(debug=True)
 #
 # @app.route("/add/<liczba1>/<liczba2>")
 # def dodawanie(liczba1, liczba2):
-#     wynik = int(liczba1) + int(liczba2)
-#     if type(wynik) is int:
-#         return "{}".format(wynik)
-#     else:
-#         return "Error"
+#     try:
+#         wynik = int(liczba1) + int(liczba2)
+#         if type(wynik) is int:
+#             return "{}".format(wynik)
+#     except ValueError:
+#         return "Podaj dwie liczby całkowite."
 #
 #
 # app.run(debug=True)
