@@ -1,0 +1,31 @@
+<!--Utwórz klasę Osoba. Każda instancja tej klasy powinna posiadać -->
+<!--trzy atrybuty – imię, nazwisko i wiek.-->
+<!--Utwórz listę kilku dowolnych osób.-->
+<!--Utwórz szablon HTML, który będzie renderował tabelę osób -->
+<!--(imię, nazwisko i wiek powinny wyświetlać się w osobnych kolumnach).-->
+<!--Napisz program, który po wejściu na adres /osoby renderuje ten szablon.-->
+<!--Przetestuj program w przeglądarce.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Osoby</title>
+</head>
+<body>
+    <table border>
+        <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Wiek</th>
+        </tr>
+        {%for item in list%}
+        <tr>
+            <td>{{item.imie}}</td>
+            <td>{{item.nazwisko}}</td>
+            <td>{{item.wiek}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>
