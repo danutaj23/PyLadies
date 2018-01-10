@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Konto</title>
+</head>
+<body>
+    <b>Saldo konta: {{ saldo }}</b>
+    </br>
+    Lista ostatnich przelewów:
+    {% if przelewy %}
+        <ol>
+            {% for przelew in przelewy %}
+                <li>{{ przelew ['numer_konta'] }}: {{ przelew ['kwota'] }}</li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        Brak przelewów
+    {% endif %}
+
+    <br><br>
+    <form action="/konto" method="post">
+        Nowy przelew: </br>
+        <input type="text" name="numer_konta" placeholder="numer konta docelowego">
+        <input type="text" name="kwota" placeholder="kwota przelewu">
+        <button type="submit">Wykonaj przelew</button>
+    </form>
+
+</body>
+</html>
