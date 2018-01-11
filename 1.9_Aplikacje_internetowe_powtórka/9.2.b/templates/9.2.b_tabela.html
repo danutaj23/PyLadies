@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pracownicy</title>
+</head>
+<body>
+    <b>Lista pracowników</b>
+    <table border>
+        <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Szczegóły</th>
+        </tr>
+        {%for pracownik in pracownicy%}
+        <tr>
+            <td>{{pracownik.imie}}</td>
+            <td>{{pracownik.nazwisko}}</td>
+            <td><a href="/szczegoly/{{pracownik.id}}">Szczegóły - id {{pracownik.id}}</a></td>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>
