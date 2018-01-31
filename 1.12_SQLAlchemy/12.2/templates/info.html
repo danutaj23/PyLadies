@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Jakiś blog</title>
+</head>
+<body>
+    <form method="post" action="/new-post">
+        <input type="text" name="content">
+        <button type="submit">Zapisz</button>
+    </form>
+
+    <div class="large-6 columns">
+        <h3>Jakieś posty:</h3>
+        <ul>
+            {% for post in blogposts %}
+            <li id="{{ post.id }}">
+                Subject: {{ post.subject }} <br>
+                Text: {{ post.text }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
