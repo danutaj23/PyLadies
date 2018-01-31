@@ -1,6 +1,7 @@
 rozne/
 *.0.html
 *.0.py
+*.db
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
